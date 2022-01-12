@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homedog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos_pages.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <!--Link FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo"></div>
+            <nav class="topnav" id="myTopnav">
+                <a href="../index.html">HOME</a>
+                <a href="./servicios.html">SERVICIOS</a>
+                <a href="./nosotros.html" class="active">NOSOTROS</a>
+                <a href="./contacto.html">CONTACTO</a>
+                <a href="./ayuda.html">AYUDA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <section class="section1">
+            <div class="section1__grid">
+                <div class="buscador">
+                    <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+                    <button type="submit" id="buscar"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="section1__box">
+                    <p>Te contamos nuestra historia...</p>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2 class="section__h2">Sobre nosotros</h2>
+        </section>
+        <section class="section3">
+            <div class="container__us">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ratione sunt
+                    nisi placeat maiores corporis adipisci maxime soluta, fugit, molestias consequatur. Illo
+                    voluptates quaerat maxime nihil excepturi ducimus, eum aut eius neque incidunt fuga deleniti
+                    inventore optio veritatis dignissimos. Quas magni omnis laborum ratione nostrum cumque provident
+                    exercitationem placeat architecto tempore repudiandae perspiciatis quod veritatis quisquam
+                    deleniti recusandae repellat, autem, dolores harum minus neque, nemo ea! Impedit non blanditiis
+                    vitae repellat ipsam consectetur, cumque doloremque fugiat error magni officiis doloribus, culpa
+                    cupiditate cum voluptatem corporis delectus. Tenetur aperiam incidunt debitis non asperiores
+                    suscipit totam, at eaque. Veritatis repudiandae consequuntur nisi ipsum a dolorum ipsa eveniet
+                    quos inventore, enim architecto, veniam libero iste exercitationem reiciendis recusandae
+                    mollitia! Non facilis blanditiis quia omnis exercitationem corrupti! Quae veritatis sequi iure
+                    aliquid provident necessitatibus autem optio voluptatibus impedit enim non debitis error
+                    asperiores voluptatum ad consequuntur, eaque cum eius odit? Modi repudiandae aut perspiciatis
+                    enim? Quia quas tempore reiciendis ipsa dolorem. Doloribus reprehenderit error, unde sapiente
+                    assumenda a quisquam vero expedita hic libero mollitia odio aut labore minima accusantium
+                    laudantium similique earum nihil fuga? Non, beatae voluptate. Quas sequi qui officiis omnis, cum
+                    reiciendis impedit, eveniet voluptate dolor dignissimos similique nesciunt adipisci deleniti
+                    recusandae minima sunt molestiae a cumque repellendus. Corrupti voluptatibus possimus
+                    repellendus architecto similique doloremque facilis voluptatum, natus, id voluptas consequuntur
+                    aliquid libero laborum? Pariatur ea ut possimus dolore nemo optio deserunt quam perferendis
+                    itaque illum, tempore fuga dolores reiciendis nulla quis consequuntur vero, sit, corrupti ipsa
+                    tempora! Tenetur animi placeat excepturi?</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Servicios</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Paseadores</a></li>
+                        <li><a href="#">Hospedajes</a></li>
+                        <li><a href="#">Veterinarias</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Sobre nosotros</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Newsletter</h3>
+                    <p>Ingresá tu Email para recibir novedades.</p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit" id="enviar"><i class="fa fa-paper-plane"></i></button>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Seguinos</h3>
+                    <i class="fab fa-facebook-square"><a href=""></a></i>
+                    <i class="fab fa-instagram-square"><a href=""></a></i>
+                    <i class="fab fa-twitter-square"><a href=""></a></i>
+                </div>
+            </div>
+            <div class="autor">
+                <p>© 2021 Coderhouse | Jara Ana </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

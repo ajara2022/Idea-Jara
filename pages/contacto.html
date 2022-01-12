@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homedog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos_pages.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <!--Link FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container__contacto">
+        <header class="header">
+            <div class="logo"></div>
+            <nav class="topnav" id="myTopnav">
+                <a href="../index.html">HOME</a>
+                <a href="./servicios.html">SERVICIOS</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./contacto.html" class="active">CONTACTO</a>
+                <a href="./ayuda.html">AYUDA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <section class="section1">
+            <div class="section1__grid">
+                <div class="buscador">
+                    <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+                    <button type="submit" id="buscar"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="section1__box">
+                    <p>Comunicate con nosotros para despejar todas tus dudas!!</p>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2 class="section__h2">Envianos tu mensaje</h2>
+        </section>
+        <section class="section3">
+            <form action="#" class="form">
+                <label for="nombre" class="form__label">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="form__input">
+
+                <label for="tel" class="form__label">Telefono</label>
+                <input type="tel" name="tel" id="tel" class="form__input">
+
+                <label for="mail" class="form__label">Mail</label>
+                <input type="email" name="mail" id="mail" class="form__input">
+
+                <label for="mensaje" class="form__label">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="form__textarea"></textarea>
+
+                <input type="submit" class="section__button section__button--submit">
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Servicios</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Paseadores</a></li>
+                        <li><a href="#">Hospedajes</a></li>
+                        <li><a href="#">Veterinarias</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Sobre nosotros</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Newsletter</h3>
+                    <p>Ingresá tu Email para recibir novedades.</p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Seguinos</h3>
+                    <i class="fab fa-facebook-square"><a href=""></a></i>
+                    <i class="fab fa-instagram-square"><a href=""></a></i>
+                    <i class="fab fa-twitter-square"><a href=""></a></i>
+                </div>
+            </div>
+            <div class="autor">
+                <p>© 2021 Coderhouse | Jara Ana </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

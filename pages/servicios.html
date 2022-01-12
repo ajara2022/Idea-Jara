@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homedog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos_pages.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <!--Link FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo"></div>
+            <nav class="topnav" id="myTopnav">
+                <a href="../index.html">HOME</a>
+                <a href="./servicios.html" class="active">SERVICIOS</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./contacto.html">CONTACTO</a>
+                <a href="./ayuda.html">AYUDA</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <section class="section1">
+            <div class="section1__grid">
+                <div class="buscador">
+                    <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+                    <button type="submit" id="buscar"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2 class="section__h2">Contratar nuestros servicios es muy fácil!!</h2>
+        </section>
+        <section class="section3">
+            <div class="servicios">
+                <label for="servicios" class="servicio__label">Servicio:</label>
+                <select name="select" class="servicio__select">
+                    <option value="value1">Hospedaje</option>
+                    <option value="value2" selected>Paseos</option>
+                    <option value="value3">Veterinarias</option>
+                </select>
+                <label for="start" class="servicio__label">Fecha desde:</label>
+                <input type="date" id="start" name="trip-start" value="16/12/2021" min="16/12/2021" max="16/12/2022"
+                    class="servicio__input">
+                <label for="end" class="servicio__label">Fecha hasta:</label>
+                <input type="date" id="end" name="trip-end" value="16/12/2021" min="16/12/2021" max="16/12/2022"
+                    class="servicio__input">
+                <button class="section__button">Buscar</button>
+            </div>
+            <div class="container__resultados">
+                <img src="../img/img4.jpg" alt="Paseos para perros" class="resultado__img">
+                <h3 class="section__h3">Juana Villamil</h3>
+                <p class="resultado__p">Soy muy responsable y me encantan los animales, tengo una calificación de 5
+                    estrellas con más de 500 comentarios positivos.</p>
+                    <button class="section__button">Ver mas</button>
+            </div>
+            <div class="container__resultados">
+                <img src="../img/img4.jpg" alt="Paseos para perros" class="resultado__img">
+                <h3 class="section__h3">Juana Villamil</h3>
+                <p class="resultado__p">Soy muy responsable y me encantan los animales, tengo una calificación de 5
+                    estrellas con más de 500 comentarios positivos.</p>
+                    <button class="section__button">Ver mas</button>
+            </div>
+            <div class="container__resultados">
+                <img src="../img/img4.jpg" alt="Paseos para perros" class="resultado__img">
+                <h3 class="section__h3">Juana Villamil</h3>
+                <p class="resultado__p">Soy muy responsable y me encantan los animales, tengo una calificación de 5
+                    estrellas con más de 500 comentarios positivos.</p>
+                    <button class="section__button">Ver mas</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Servicios</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Paseadores</a></li>
+                        <li><a href="#">Hospedajes</a></li>
+                        <li><a href="#">Veterinarias</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Sobre nosotros</h3>
+                    <ul class="footer__ul">
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Newsletter</h3>
+                    <p>Ingresá tu Email para recibir novedades.</p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="footer__boxes">
+                    <h3 class="section__h3">Seguinos</h3>
+                    <i class="fab fa-facebook-square"><a href=""></a></i>
+                    <i class="fab fa-instagram-square"><a href=""></a></i>
+                    <i class="fab fa-twitter-square"><a href=""></a></i>
+                </div>
+            </div>
+            <div class="autor">
+                <p>© 2021 Coderhouse | Jara Ana </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
